@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-cadastro.css">
+    <title>Empório das Bolsas | Cadastro</title>
+</head>
+<body>
+    <section id="login">
+        <h1>Cadastro</h1>
+        <form action="" method="post">
+            <input type="text" name="nome" id="inome" class="input" placeholder="Nome Completo" required><br>
+            <span class="erro" id="erro-nome" style="display: none;">Nome e sobrenome</span>
+            <input type="email" name="email" id="iemail" class="input" placeholder="exemplo@gmail.com" required><br>
+            <input type="password" name="senha" id="isenha" class="input" placeholder="Insira a senha" required><br>
+            <span class="erro" style="display: none;">A senha deve conter 6-10 caracteres</span>
+            <input type="password" name="senha" id="isenha2" class="input" placeholder="Insira a senha novamente" required><br>
+            <input type="submit" name="entrar" id="ientrar" class="botao" value="Entrar" onclick="verificaFormulario()"><br>
+            <span class="cadastre-se">Já tem conta? <a href="login.html">Fazer Login</a></span>
+        </form>
+    </section>
+
+    
+    <script src="login-cadastro.js"></script>
+</body>
+</html>
