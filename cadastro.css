@@ -1,0 +1,126 @@
+/* cor primaria: #B8860B;
+cor secundaria: #8B4513
+cor decent = #F5DEB3
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #F5DEB3;
+    color: #8B4513;
+    padding: 30px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    width: 300px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 1px solid #8B4513;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s ease-out;
+    color: #8B4513;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 1px solid #B8860B;
+}
+
+.label-float label{
+    color: #8B4513;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color:#B8860B
+}
+
+button{
+    background-color: transparent;
+    border-color: #8B4513;
+    color: #8B4513;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20pt;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: #8B4513;
+    color: #fff;
+    transition: all .3s  ease-out;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+p{
+    color: #8B4513;
+    font-size: 14pt;
+    text-align: center;
+}
+
+a{
+    color: #B8860B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#8B4513;
+    transition: all .3s ease-out;
+}
+
+.olho{
+    width: 20px;
+    position: absolute;
+    top: 15px;
+    right: 1px;
+    cursor: pointer;
+    fill: #8B4513;
+}
